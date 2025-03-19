@@ -252,6 +252,7 @@ type Option func(*PubSub) error
 
 // NewPubSub returns a new PubSub management object.
 func NewPubSub(ctx context.Context, h host.Host, rt PubSubRouter, opts ...Option) (*PubSub, error) {
+    fmt.Println("Warning forked version of pubsub: @hopinheimer")   
 	ps := &PubSub{
 		host:                  h,
 		ctx:                   ctx,
